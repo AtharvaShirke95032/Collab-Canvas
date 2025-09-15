@@ -29,13 +29,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ConvexClientProvider>
-          <SignedIn>
+          {/* <SignedIn>
             {children}
-          </SignedIn>
-
-          <SignedOut>
+          </SignedIn> */}
+          {children}
+          {/* <SignedOut>
             <RedirectToSignIn />
-          </SignedOut>
+          </SignedOut> */}
         </ConvexClientProvider>
       </body>
     </html>
