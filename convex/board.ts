@@ -33,7 +33,9 @@ export const create = mutation({
         authorId:identity.subject,
         authorName:identity.name!,
         imageUrl:randomImage
-    })
+    });
+
+        return board;
     }
 
    
